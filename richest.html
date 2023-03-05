@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy of Billionaires</title>
+
+    <!-- daisyUI and tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <div class="lg:flex lg:justify-evenly lg:mx-20 md:mx-20sm:text-center">
+                <div class="my-10 bg-blue-900 p-8 text-center drop-shadow-lg rounded">
+                    <div class="bg-current p-2 font-bold">
+                     <h1 class="text-white">BILLIONAIRE </h1>
+                     <h3 class='text-white'>DAIRY</h3>
+                    </div>
+                     <div  class="my-4 bg-slate-200 p-2 hover:bg-zinc-600 hover:text-white">
+                         <button type="button" class="cursor-pointer p-2 font-bold">Show Top 10 Billionaires</button>
+                     </div>
+                     <div  class="my-4 bg-slate-200 p-2 hover:bg-zinc-600 hover:text-white">
+                         <button type="button" class="cursor-pointer font-bold">Show All Billionaire</button>
+                     </div>
+                     <div  class="my-4 bg-slate-200  p-2 hover:bg-zinc-600 hover:text-white">
+                       <button type="button" class="cursor-pointer"><span class="font-bold">Richest By Industry</span> <br> (technology)</button>
+                     </div>
+                     <div  class="my-4 bg-slate-200  p-2 hover:bg-zinc-600 hover:text-white">
+                         <button type="button" class="cursor-pointer"><span class="font-bold">Richest By State </span><br>(Taxes)</button>
+                     </div>
+                     <div  class="my-4 bg-slate-200  p-2 hover:bg-zinc-600 hover:text-white">
+                         <button type="button" class="cursor-pointer"><span class="font-bold">Richest By Industry</span> <br> (Finance)</button>
+                     </div>
+                    <div  class="my-4 bg-slate-200 p-2 hover:bg-zinc-600 hover:text-white">
+                     <button type="button" class="cursor-pointer"><span class="font-bold">Richest By Industry</span> <br> (Investment)</button>
+                    </div>
+                     <div  class="my-4 bg-slate-200 p-2 hover:bg-zinc-600 hover:text-white">
+                         <button type="button" class="cursor-pointer"><span class="font-bold">Richest By Industry</span> <br> (Fashion)</button>
+                     </div>
+                </div>
+                
+                <div class=" my-10 drop-shadow-lg w-full rounded-lg">
+                    <!-- <div class="pt-8 pb-2 px-4 bg-zinc-200 pr-20 rounded"> 
+                    <input class="p-2 px-8" type="text" placeholder="Search">
+                    <p class="text-red-400">*when show all billionaire,please don't use search button filter</p>
+                    </div> -->
+
+                    <!-- search box -->
+                    <label class="relative block">
+                        <span class="sr-only">Search</span>
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                          <svg class="h-5 w-4 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+                        </span>
+                        <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-2 mt-4 mr-4 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
+                        <!-- <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+                            Please provide a valid email address.
+                          </p> -->
+                        <p class="text-red-400 p-2">*when show all billionaire,please don't use search button filter</p>
+                      </label>
+                    <table class="table w-full pr-20">
+                      <!-- head -->
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Name</th>
+                          <th>Job</th>
+                          <th>Favorite Color</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- row 1 -->
+                        <tr>
+                          <th>1</th>
+                          <td>Cy Ganderton</td>
+                          <td>Quality Control Specialist</td>
+                          <td>Blue</td>
+                        </tr>
+                        <!-- row 2 -->
+                        <tr class="hover">
+                          <th>2</th>
+                          <td>Hart Hagerty</td>
+                          <td>Desktop Support Technician</td>
+                          <td>Purple</td>
+                        </tr>
+                        <!-- row 3 -->
+                        <tr>
+                          <th>3</th>
+                          <td>Brice Swyre</td>
+                          <td>Tax Accountant</td>
+                          <td>Red</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        </section>
+        <section>
+
+        </section>
+
+    </main>
+    
+
+<script src="js/rich.js"></script>
+</body>
+</html>
